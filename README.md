@@ -61,4 +61,17 @@ Dark Chocolate comes with small, focused examples:
 - **[ApiTime.py](Examples/ApiTime.py)** - JSON API endpoint  
 - **[EchoForm.py](Examples/EchoForm.py)** - POST form handling  
 - **[CookieCounter.py](Examples/CookieCounter.py)** - cookies  
-- **[SendLogo.py](Examples/SendLogo.py)** -  file sending  
+- **[SendLogo.py](Examples/SendLogo.py)** -  file sending
+
+## Why Dark Chocolate? 🍫
+
+- You can read the entire framework in minutes  
+- Zero dependencies  
+- Perfect for learning how web servers work  
+- Great for tiny apps, demos, and teaching  
+- Clean, expressive, Pythonic API  
+
+## Liscense ⚖️
+
+Dark Chocolate uses the MIT liscense and the Contributor Covenant Code of Conduct.
+
