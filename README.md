@@ -30,3 +30,25 @@ Or drop the Core/ folder into your project.
 ## Quick Examples 🧁
 
 All examples are in the [Examples](Examples/) folder
+
+## Getting Started 🏁
+
+Here’s the smallest possible Dark Chocolate app:
+
+```python
+from Core.Router import Router
+from Core.Server import Run, Server
+from Core.Response import Response
+
+router = Router()
+
+@router.AddRoute("/")
+def Home(req):
+    return Response("Hello from Dark Chocolate!")
+
+server = Server(router, Port=8080)
+Run(server)
+```
+
+Run it with python app.py, then visit http://localhost:8080
+
