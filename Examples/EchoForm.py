@@ -1,12 +1,9 @@
-# imports
-
 from Core.Router import Router
 from Core.Server import Run, Server
 from Core.Response import Response
 
-router = Router() # start router
+router = Router()
 
-# add route
 @router.AddRoute("/")
 def Form(req):
     return Response("""
@@ -16,7 +13,6 @@ def Form(req):
         </form>
     """, Headers={"Content-Type": "text/html"})
 
-# add route echo
 @router.AddRoute("/echo")
 def Echo(req):
     text = req.POST.get("text", "")
@@ -24,3 +20,5 @@ def Echo(req):
 
 server = Server(router, Port=8080)
 Run(server)
+
+# run, then enter data. 
