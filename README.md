@@ -24,7 +24,7 @@ If you want a framework that feels like early Flask mixed with Express.js minima
 
 to Install, run:
 
-git clone https://github.com/Lemonsandlimez/Dark-chocolatE
+git clone https://github.com/Lemonsandlimez/Dark-chocolate
 Or drop the Core/ folder into your project.
 
 ## Quick Examples 🧁
