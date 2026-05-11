@@ -11,3 +11,5 @@ def Time(req):
 
 server = Server(router, Port=8080)
 Run(server)
+
+# use with http://127.0.0.1:8080/ and refresh , while running.
