@@ -52,3 +52,13 @@ Run(server)
 
 Run it with python app.py, then visit http://localhost:8080
 
+
+## Included Examples 📂
+
+Dark Chocolate comes with small, focused examples:
+
+- **[HelloUser.py](Examples/HelloUser.py)** — route parameters  
+- **[ApiTime.py](Examples/ApiTime.py)** — JSON API endpoint  
+- **[EchoForm.py](Examples/EchoForm.py)** — POST form handling  
+- **[CookieCounter.py](Examples/CookieCounter.py)** — cookies  
+- **[SendLogo.py](Examples/SendLogo.py)** — file sending  
