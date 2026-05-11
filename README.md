@@ -17,7 +17,7 @@ If you want a framework that feels like early Flask mixed with Express.js minima
 5) POST body parsing (JSON + forms)
 6) JSON responses
 7) File sending
-8) Safe error wrapper  
+8) Safe error wrapper 
 .. All with zero external dependencies.
 
 ## Installation 💻
