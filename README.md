@@ -73,5 +73,5 @@ Dark Chocolate comes with small, focused examples:
 
 ## Liscense ⚖️
 
-Dark Chocolate uses the [MIT Liscense](LISCENSE.md) and the Contributor Covenant Code of Conduct.
+Dark Chocolate uses the [MIT License](LICENSE.md) and the Contributor Covenant Code of Conduct.
 
