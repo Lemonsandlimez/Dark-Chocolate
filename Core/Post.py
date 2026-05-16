@@ -38,6 +38,6 @@ class PostParser:
         if content_type == "application/x-www-form-urlencoded":
             return dict(urllib.parse.parse_qsl(text))
 
-        # Unknown type → raw text
+        # Unknown type -> raw text
         return {"raw": text}
 
