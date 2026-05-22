@@ -71,6 +71,63 @@ Dark Chocolate comes with small, focused examples:
 - Great for tiny apps, demos, and teaching  
 - Clean, expressive, Pythonic API  
 
+## Folder Structure
+```
+Core/
+├── Cookies.py
+│   ├── CookieParser.Parse(raw_cookie_header)
+│   └── CookieBuilder.Build(name, value, **options)
+│
+├── Error.py
+│   ├── Error(Status=500, Message="Something went wrong", Details=None)
+│   ├── BadRequest(Message="Bad Request")
+│   ├── Unauthorized(Message="Unauthorized")
+│   ├── Forbidden(Message="Forbidden")
+│   ├── NotFound(Message="Not Found")
+│   ├── ServerError(Message="Internal Server Error")
+│   ├── RequireFields(data, fields, error_message_prefix="Missing field")
+│   ├── Require(condition, message="Invalid request")
+│   └── Safe(handler, show_traceback=False)
+│
+├── File.py
+│   └── SendFile(Path, DownloadName=None)
+│
+├── Json.py
+│   └── Json(Data, Status=200)
+│
+├── Post.py
+│   └── PostParser.Parse(body_bytes, content_type)
+│
+├── Request.py
+│   └── Request.__init__(self, Method="", Path="", Headers=None, Body=b"", Address=None)
+│
+├── Response.py
+│   ├── Response.__init__(self, Body="", Status=200, Headers=None)
+│   ├── Response.ToBytes(self)
+│   ├── Response.SetCookie(self, name, value, **options)
+│   ├── Response.DeleteCookie(self, name, Path="/")
+│   └── Response.GetStatusText(self)
+│
+├── Router.py
+│   ├── Router.__init__(self)
+│   ├── Router.Use(self, func)
+│   ├── Router.AddRoute(self, Pattern, Handler=None)
+│   ├── Router.Match(self, Path)
+│   └── Router.Handle(self, Request)
+│
+└── Server.py
+    ├── Server.__init__(self, Router, Host="127.0.0.1", Port=8080)
+    ├── Server.HandleClient(self, reader, writer)
+    ├── Server.Start(self)
+    │
+    ├── SyncServer.__init__(self, Router, Host="127.0.0.1", Port=8080)
+    ├── SyncServer.Start(self)
+    └── SyncServer.HandleClient(self, conn, addr)
+
+Public API:
+├── Run(server)
+└── AsyncRun(server)
+``` 
 ## Liscense ⚖️
 
 Dark Chocolate uses the MIT License and the Contributor Covenant Code of Conduct.
